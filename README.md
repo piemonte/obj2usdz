@@ -6,7 +6,7 @@ With the introduction of the [USDZ](https://graphics.pixar.com/usd/docs/Usdz-Fil
 
 ```sh
 xcrun usdz_converter Tyrannosaurus.obj Tyrannosaurus.usdz 
-- g TyrannosaurusMesh
+-g TyrannosaurusMesh
 -color_map Tyrannosaurus_Color.png
 -metallic_map Tyrannosaurus_Metallic.png
 -roughness_map Tyrannosaurus_Roughness.png
