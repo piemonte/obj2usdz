@@ -32,7 +32,7 @@ fileprivate let usdcFileExtension = "usdc"
 fileprivate let usdzFileExtension = "usdz"
 
 extension MDLAsset {
-    
+
     /// export/convert an OBJ file to USDZ format on device
     ///
     /// - Parameters:
@@ -40,20 +40,21 @@ extension MDLAsset {
     ///   - completionHandler: completion handler for the operation, (completed, error)
     public func exportToUSDZ(destinationFileUrl: URL, completionHandler: ((Bool, Error?) -> Void)? = nil) {
         // check if destinationUrl is valid
-        if !FileManager.default.fileExists(atPath: destinationFileUrl.absoluteString) {
+        guard FileManager.default.fileExists(atPath: destinationFileUrl.path) == false else {
             DispatchQueue.main.async {
                 completionHandler?(false, nil)
             }
+            return
         }
-        
+
         // check if destination is ".usdz"
-        // https://graphics.pixar.com/usd/docs/Usdz-File-Format-Specification.html
-        if destinationFileUrl.pathExtension != usdzFileExtension {
+        guard destinationFileUrl.pathExtension == usdzFileExtension else {
             DispatchQueue.main.async {
                 completionHandler?(false, nil)
             }
+            return
         }
-        
+
         // export the .obj asset and create a temp .usdc file
         let usdcDestinationFileUrl = destinationFileUrl.deletingPathExtension().appendingPathExtension(usdcFileExtension)
         if MDLAsset.canExportFileExtension(usdcFileExtension) {
@@ -79,11 +80,11 @@ extension MDLAsset {
                 completionHandler?(false, error)
             }
         }
-        
+
         // success!
         DispatchQueue.main.async {
             completionHandler?(true, nil)
         }
     }
-    
+
 }
