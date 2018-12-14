@@ -2,6 +2,8 @@
 //  MDLAsset+usdz.swift
 //  obj2usdz
 //
+//  MIT License
+//
 //  Copyright (c) 2018-present patrick piemonte (http://patrickpiemonte.com)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
