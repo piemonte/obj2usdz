@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		063D96F82203A8C3001439A4 /* MDLAsset+usdz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MDLAsset+usdz.swift"; path = "../../Source/MDLAsset+usdz.swift"; sourceTree = "<group>"; };
+		063D96F82203A8C3001439A4 /* MDLAsset+usdz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MDLAsset+usdz.swift"; path = "../Source/MDLAsset+usdz.swift"; sourceTree = "<group>"; };
 		0654584A1D7907F00075ADFB /* obj2usdzExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = obj2usdzExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0654584D1D7907F00075ADFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0654584F1D7907F00075ADFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +73,7 @@
 				0654584F1D7907F00075ADFB /* ViewController.swift */,
 				06708F901D8F100C00CDC250 /* Supporting Files */,
 			);
-			name = App;
-			path = SessionExporter;
+			path = App;
 			sourceTree = "<group>";
 		};
 		0654585F1D7908E80075ADFB /* obj2usdz */ = {
@@ -83,7 +82,7 @@
 				063D96F82203A8C3001439A4 /* MDLAsset+usdz.swift */,
 			);
 			name = obj2usdz;
-			path = SessionExporter;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 		06708F901D8F100C00CDC250 /* Supporting Files */ = {
@@ -363,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW68C6MX6N;
-				INFOPLIST_FILE = SessionExporter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpiemonte.obj2usdzExample;
@@ -378,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW68C6MX6N;
-				INFOPLIST_FILE = SessionExporter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpiemonte.obj2usdzExample;

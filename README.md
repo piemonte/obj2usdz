@@ -32,6 +32,7 @@ objAsset.exportToUSDZ(destinationFileUrl: destinationFileUrl)
 * [USDZ Specification](https://graphics.pixar.com/usd/docs/Usdz-File-Format-Specification.html)
 * [Pixar’s USD project](https://github.com/PixarAnimationStudios/USD)
 * [scandy blog](https://www.scandy.co/blog/how-to-export-simple-3d-objects-as-usdz-on-ios)
+* [BlenderUSDZ](https://github.com/robmcrosby/BlenderUSDZ.git)
 
 ## License
 
