@@ -33,6 +33,7 @@ objAsset.exportToUSDZ(destinationFileUrl: destinationFileUrl)
 * [Pixar’s USD project](https://github.com/PixarAnimationStudios/USD)
 * [scandy blog](https://www.scandy.co/blog/how-to-export-simple-3d-objects-as-usdz-on-ios)
 * [BlenderUSDZ](https://github.com/robmcrosby/BlenderUSDZ.git)
+* [USDPython](https://developer.apple.com/download/more/?=USDPython), Python based tools for generating, validating, and creating USD files.
 
 ## License
 
