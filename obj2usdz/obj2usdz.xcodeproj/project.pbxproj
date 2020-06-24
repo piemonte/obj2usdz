@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		063D96F82203A8C3001439A4 /* MDLAsset+usdz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MDLAsset+usdz.swift"; path = "../Source/MDLAsset+usdz.swift"; sourceTree = "<group>"; };
+		063D96F82203A8C3001439A4 /* MDLAsset+usdz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MDLAsset+usdz.swift"; path = "../Sources/MDLAsset+usdz.swift"; sourceTree = "<group>"; };
 		0654584A1D7907F00075ADFB /* obj2usdzExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = obj2usdzExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0654584D1D7907F00075ADFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0654584F1D7907F00075ADFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +25,7 @@
 		065458571D7907F00075ADFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		065458591D7907F00075ADFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06FC751821D8AE2000B84E10 /* obj2usdz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = obj2usdz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		06FC751A21D8AE2000B84E10 /* obj2usdz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = obj2usdz.h; path = ../../Source/obj2usdz.h; sourceTree = "<group>"; };
+		06FC751A21D8AE2000B84E10 /* obj2usdz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = obj2usdz.h; path = ../../Sources/obj2usdz.h; sourceTree = "<group>"; };
 		06FC751B21D8AE2000B84E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +180,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
