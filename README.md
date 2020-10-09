@@ -2,11 +2,11 @@
 
 Create .USDZ files from iOS itself in [Swift](https://developer.apple.com/swift/).
 
-## Note
+### Note
 
 Since WWDC19, it's now possible to write usdz files natively using SceneKit. (thanks @cpheinrich)
 
-This repo shared an older technique prior to it's more recent recommended method:
+This repo shared an older technique prior to it's the current recommended method:
 
 ```swift
 import SceneKit
@@ -19,7 +19,7 @@ scene.write(to: <your-usdz-file-path>, delegate: nil)
 
 • [Recommended at WWDC19](https://developer.apple.com/videos/play/wwdc2019/602/)
 
-## Previous Technique
+### Previous Technique
 
 With the introduction of the [USDZ](https://graphics.pixar.com/usd/docs/Usdz-File-Format-Specification.html) format and iOS 12, Apple provided guidance only for creating `.usdz` files using their macOS commandline tool:
 
