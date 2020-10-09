@@ -1,6 +1,25 @@
 # obj2usdz
 
-Convert Wavefront .OBJ files to .USDZ from an iOS device in [Swift](https://developer.apple.com/swift/).
+Create .USDZ files from iOS itself in [Swift](https://developer.apple.com/swift/).
+
+## Note
+
+Since WWDC19, it's now possible to write usdz files natively using SceneKit. (thanks @cpheinrich)
+
+This repo shared an older technique prior to it's more recent recommended method:
+
+```swift
+import SceneKit
+import ModelIO
+
+let asset = MDLAsset(url: objPath)
+let scene = SCNScene(mdlAsset: asset)
+scene.write(to: <your-usdz-file-path>, delegate: nil)
+```
+
+• [Recommended at WWDC19](https://developer.apple.com/videos/play/wwdc2019/602/)
+
+## Previous Technique
 
 With the introduction of the [USDZ](https://graphics.pixar.com/usd/docs/Usdz-File-Format-Specification.html) format and iOS 12, Apple provided guidance only for creating `.usdz` files using their macOS commandline tool:
 
@@ -14,11 +33,9 @@ xcrun usdz_converter Tyrannosaurus.obj Tyrannosaurus.usdz
 -emissive_map  Tyrannosaurus_Emissive.png
 ```
 
-Thanks to the discovery from the folks at [scandy](https://www.scandy.co/blog/how-to-export-simple-3d-objects-as-usdz-on-ios), there is a means to create USDZ files from iOS itself.
-
 ### Exporting to .USDZ
 
-Copy the `MDLAsset+usdz.swift` file into your Xcode project.
+Copy the `MDLAsset+usdz.swift` file into your Xcode project and create .USDZ in the following way:
 
 ```swift
 let objAsset = MDLAsset(url: objUrl)
